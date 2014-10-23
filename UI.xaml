@@ -1,0 +1,18 @@
+﻿<Window x:Class="KSP.E3.EnumerateSignals.UI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Перенумерование цепей" Height="236" Width="291">
+    <Grid RenderTransformOrigin="0.495,0.622">
+        <Button Content="Захватить" HorizontalAlignment="Left" Margin="104,177,0,0" VerticalAlignment="Top" Width="75" Name="btn_Capture" Click="btn_Capture_Click"/>
+        <GroupBox Header="Префикс имени цепи:" HorizontalAlignment="Left" Height="50" Margin="10,66,0,0" VerticalAlignment="Top" Width="265" FontFamily="Shonar Bangla">
+            <TextBox Height="30" VerticalContentAlignment="Center" TextAlignment="Center" TextWrapping="NoWrap"  VerticalAlignment="Center" Width="253" BorderThickness="0" Name="tb_Prefix" FontFamily="Times New Roman" FontSize="14"/>
+        </GroupBox>
+        <TextBox HorizontalAlignment="Left" VerticalContentAlignment="Center" Height="25" Margin="222,121,0,63" TextWrapping="NoWrap" TextAlignment="Center" Text="1" Width="35" Name="tb_Number" FontFamily="Times New Roman" FontSize="14"/>
+        <ScrollBar HorizontalAlignment="Left" Height="25" Margin="257,121,0,0" VerticalAlignment="Top" Name="sb_Number"/>
+        <GroupBox Header="Проект:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="50" Width="265" Name="gb_Project" FontFamily="Shonar Bangla">
+            <TextBox VerticalContentAlignment="Center" TextAlignment="Center" Height="30" IsReadOnly="True" BorderThickness="0" TextWrapping="NoWrap" Width="251" FontFamily="Times New Roman" FontSize="14" Name="tb_Project"/>
+        </GroupBox>
+        <Label Content="Номер следующей цепи:" HorizontalAlignment="Left" Height="25" Margin="10,121,0,0" VerticalAlignment="Top" Width="207" FontFamily="Times New Roman" FontSize="14"/>
+
+    </Grid>
+</Window>
